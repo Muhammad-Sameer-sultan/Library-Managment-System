@@ -1,0 +1,205 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url("book.jpg") no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    background-position: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    padding: 20px 10px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav{
+    margin: 5px;
+}
+.nav a{
+    margin:30px;
+    color: white;
+}
+.nav input{
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+.f-main{
+    /* display: flex;
+    flex-direction: column; */
+    font-size: 18px;
+    margin-top: 20px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 2rem 2rem;
+    border-radius: 3rem;
+   color: black;
+   box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5);
+}
+.f-main h1{
+    font-size: 28px;
+    text-align: center;
+    
+}
+ 
+form{
+    margin-top: 20px;
+}
+form >div{
+    padding: 10px;
+
+}
+.main{
+    width: 100%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+            
+
+}
+.input-div{
+    display: flex;
+    /* background: #000; */
+    justify-content: space-between;
+}
+.input-div input{
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.4rem;
+}
+.basic{
+    /* background: #000; */
+    /* display: flex;
+    justify-content: space-between; */
+    margin-right: 200px;
+
+}
+.type >div{
+    /* margin-right: 20px; */
+}
+.type{
+    padding: 0px 1rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background: #000; */
+    
+}
+
+.submit_btn{
+ 
+    background: dodgerblue;
+    padding: 8px;
+    border-radius: 8px;
+    float: right;
+    /* display: flex;
+    flex-direction: flex-end; */
+    color: white;
+}
+
+/* table dic styling */
+.deletebtn{
+    
+    background: burlywood;
+    color: white;
+    cursor: pointer;
+    /* padding: 6px 0px;; */
+}
+.deletebtn:hover{
+    box-shadow: 0 0 1rem burlywood;
+    
+}
+
+
+
+.table-div{
+    margin-top: 2rem;
+    width: 50%;
+    /* background: #000; */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center   ; */
+        /* align-items: center; */
+    text-align: center;
+
+    }
+
+    table{
+        align-self: center  ;
+        width: 80%;
+        margin-top: 20px;
+        text-align: center;
+        padding: 10px;
+        background: #f5f5f5;
+    }
+    table::-webkit-scrollbar {
+        width: 20px;
+      }
+      table::-webkit-scrollbar-track {
+        background-color: #555;
+      }
+      table::-webkit-slider-thumb {
+        width: 10px;
+        background: red;
+      }
+    table, th, td{
+
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+    th{
+        background-color: #555;
+        color:   #f5f5f5;
+    }
+/* for message display */
+/* 
+.close:active ~alert{
+    
+        visibility: hidden;
+    
+} */
+@media screen and (max-width: 480px) {
+    body {
+      /* background-color: gainsboro; */
+    }
+    #sam{
+        font-size: 1.5em;
+        /* text-align: center; */
+        
+    }
+    .nav{
+        /* margin: 0px; */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        /* align-items: center; */
+        /* background:cyan; */
+    }
+    .nav a{
+        /* background: #000;
+        /* float: right; */
+        /* align-self:left;
+        display :flex; */
+        /* margin:30px; */
+        color: white; */
+    }
+    .nav input{
+        /* background: greenyellow; */
+        /* align-self:left; */
+        /* float: right;
+        
+        top:0; */
+        width:80px;
+        border-radius: 8px;
+        padding: 0px 0px;
+        height: 20px;
+    }
+  }

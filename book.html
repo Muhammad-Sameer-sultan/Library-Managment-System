@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book library</title>
+   
+
+    <link href="book.css" type="text/css" rel="stylesheet">
+</link>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 id="sam" >Library Managment System</h1>
+
+        <div class="nav">
+            <a href="">Home</a>
+            <input type="text" placeholder="Search" />
+        </div>
+    </div>
+
+    <div id="message"></div>
+
+    <div class="main">
+        <div class="f-main">
+            <h1>Library Managment System</h1>
+            <hr>
+            <form id="book-form" >
+                <div class="input-div">
+                    <label>Name: </label><input id="book" class="basic" type="text" placeholder="Book Name">
+                </div>
+                <div class="input-div">
+                    <label>Author: </label><input id="author" class="basic" type="text" placeholder="Author Name">
+                </div>
+                <div class="input-div">
+                    <label>Type:</label>
+                    <div class="basic type">
+                        <div>
+                            <input  type="radio" id="friction" vlaue="friction" name="type" checked>
+                            <label for="friction">Friction</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="cooking" vlaue="cooking" name="type">cooking
+                        </div>
+                        <div>
+                            <input type="radio" id="programming" vlaue="programing" name="type">programing
+                        </div>
+                    </div>
+                </div>
+                <button id='submit_btn' class="submit_btn" >Submit</button>
+
+            </form>
+        </div>
+
+
+        <!-- //table creating -->
+        <div class="table-div">
+            <h1>Your Books</h1>
+            <hr>
+            <table>
+                <thead id="thead">
+                    <tr>
+                        <th>Name</th>
+                        <th>Author</th>
+                        <th>Type</th>
+                    </tr>
+                <tbody id="tbody">
+                    
+                </tbody>
+                </thead>
+            </table>
+        </div>
+
+
+
+
+    </div>
+
+    <script src="booku.js"></script>
+</body>
+
+</html>
