@@ -15,7 +15,7 @@ body {
 /* header */
 
 
-.navbar {
+.navbar-main {
 
     padding: 20px 10px;
     background: black;
@@ -25,11 +25,11 @@ body {
     align-items: center;
 }
 
-.nav {
+.nav-inner {
     margin: 5px;
 }
 
-.nav a {
+.nav-inner a {
     text-decoration: none;
     font-weight: 600;
     margin: 30px;
@@ -37,7 +37,7 @@ body {
 
 }
 
-.nav input {
+.nav-inner input {
     border-radius: 8px;
     padding: 5px 10px;
 }
@@ -66,9 +66,15 @@ body {
 .f-main h1 {
     font-size: 28px;
     text-align: center;
+    font-weight: 600;
+    /* text-shadow: 0rem 0rem 0.5rem res; */
 
 }
-
+#message{
+    position: absolute;
+    width: 100%;
+    top: 5.8rem;
+}
 
 #book-form {
     padding: 1rem;
@@ -77,45 +83,33 @@ body {
     gap: 1rem;
     font-weight: 550;
 }
+.input-div label{
+
+    width: 4rem;
+    display: inline-block;
+}
 
 .basic-type {
-    margin-left: 3rem;
+    margin-left: 3.5rem;
+    display: flex;
+    gap: 2rem;
 
-    /* display: inline; */
 }
-
-/* .basic-type input[type="radio"]{
-    display: none;
-} */
-/* 
-.basic-type input[type="radio"] + label{
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
+.basic-type input[type='radio']{
+    display: inline-block;
+    font-size: 3rem;
+    width: 2rem;
 }
-.basic-type input[type="radio"]+label::before{
-    content: "";
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 0.8rem;
-    height: 0.8rem;
-    border: 2px solid dodgerblue;
-    border-radius: 50%;
-}
-
-.basic-type input[type="radio"]:checked + label::before{
-    background-color: dodgerblue;
-} */
 
 .basic {
-    border-radius: 0.2rem;
+    /* display: inline-block; */
+    border-radius: 0.3rem;
     border: none;
     padding: 0.4rem;
     margin-left: 1rem;
     /* display: block; */
     width: 80%;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .submit_btn {
@@ -203,13 +197,7 @@ th {
     color: #f5f5f5;
 }
 
-/* for message display */
-/* 
-.close:active ~alert{
-    
-        visibility: hidden;
-    
-} */
+
 
 @media screen and (max-width: 480px) {
 
@@ -235,7 +223,7 @@ th {
         display :flex; */
         /* margin:30px; */
         color: white;
-        */
+        
     }
 
     .nav input {
@@ -248,5 +236,21 @@ th {
         border-radius: 8px;
         padding: 0px 0px;
         height: 20px;
+    }
+    .basic-type{
+        margin: 0;
+        flex-direction: column;
+    }
+    .basic-type [type='radio']{
+        display: inline;
+    }
+    .f-main{
+        margin: 1rem;
+        width: 80%;
+    }
+    .table-div{
+        width: 80%;
+        padding: 0.5rem;
+
     }
 }
